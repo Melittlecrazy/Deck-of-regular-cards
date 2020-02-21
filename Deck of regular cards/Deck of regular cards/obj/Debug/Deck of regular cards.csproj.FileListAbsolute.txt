@@ -1,0 +1,6 @@
+C:\Users\marc.gutierrez\Documents\GitHub\Deck-of-regular-cards\Deck of regular cards\Deck of regular cards\bin\Debug\Deck of regular cards.exe.config
+C:\Users\marc.gutierrez\Documents\GitHub\Deck-of-regular-cards\Deck of regular cards\Deck of regular cards\bin\Debug\Deck of regular cards.exe
+C:\Users\marc.gutierrez\Documents\GitHub\Deck-of-regular-cards\Deck of regular cards\Deck of regular cards\bin\Debug\Deck of regular cards.pdb
+C:\Users\marc.gutierrez\Documents\GitHub\Deck-of-regular-cards\Deck of regular cards\Deck of regular cards\obj\Debug\Deck of regular cards.csprojAssemblyReference.cache
+C:\Users\marc.gutierrez\Documents\GitHub\Deck-of-regular-cards\Deck of regular cards\Deck of regular cards\obj\Debug\Deck of regular cards.exe
+C:\Users\marc.gutierrez\Documents\GitHub\Deck-of-regular-cards\Deck of regular cards\Deck of regular cards\obj\Debug\Deck of regular cards.pdb

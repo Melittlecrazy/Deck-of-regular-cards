@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace Deck_of_regular_cards
 {
-    class Program
+    class Utility
     {
-        static void Main(string[] args)
-        {
-           new App();
-        }
+        public static Random RanNum = new Random();
     }
 }
