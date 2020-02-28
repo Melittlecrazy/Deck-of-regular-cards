@@ -12,14 +12,14 @@ namespace Deck_of_regular_cards
         public List<Player> Players = new List<Player>();
         public Deck deck = new Deck();
 
-
         public void HighLow()
         {
+
             Clear();
 
 
             deck = new Deck();
-
         }
+        
     }
 }

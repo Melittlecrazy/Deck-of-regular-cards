@@ -17,7 +17,7 @@ namespace Deck_of_regular_cards
         } 
     internal class Deck
     {
-        List<Cards> cards = new List<Cards>();
+        public List<Cards> cards = new List<Cards>();
         public Suit[] Suits = { Suit.Clubs, Suit.Diamonds, Suit.Hearts, Suit.Spades };
 
         public int CardsInDeck => cards.Count;
@@ -51,7 +51,8 @@ namespace Deck_of_regular_cards
         //constructer
         public Deck()
         {
-
+            cards.Add(new Cards("bob",0, 1));
+            cards.Add(new Cards("bobbie", Suits.Clubs, 1));
         }
 
         //show all

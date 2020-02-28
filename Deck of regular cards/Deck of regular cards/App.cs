@@ -10,6 +10,7 @@ namespace Deck_of_regular_cards
     internal class App
     {
         Game game = new Game();
+        War war = new War();
 
         public App()
         {
@@ -31,7 +32,7 @@ namespace Deck_of_regular_cards
             Clear();
             //setup options for player
             WriteLine("Welcome, wanna play a game?");
-            WriteLine("1) PlayHigher or Lower game (single player) \n2) Mystery game (Two player)\n3) Credits \n4) Exit");
+            WriteLine("1) PlayHigher or Lower game (single player) \n2) War (Two player)\n3) Credits \n4) Exit");
             string input = ReadLine();
             switch (input)
             { //switches are a "incase the value is"
@@ -40,10 +41,11 @@ namespace Deck_of_regular_cards
                     //HighLow();
                     break;
                 case "2":
-
+                    war.Play();
+                    ReadKey();
                     break;
                 case "3":
-                    WriteLine("Credited by Marc Gutierrez. Some code provided by programmingisfun.com");
+                    WriteLine("Credited by Marc Gutierrez & Gabe Salas. Some code provided by programmingisfun.com");
                     ReadKey();
                     break;
                 case "4":
