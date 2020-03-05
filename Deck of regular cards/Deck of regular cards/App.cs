@@ -22,17 +22,12 @@ namespace Deck_of_regular_cards
                 Menu();
         }
 
-        protected void Run()
-        {
-
-        }
-
         protected void Menu()
         {
             Clear();
             //setup options for player
             WriteLine("Welcome, wanna play a game?");
-            WriteLine("1) PlayHigher or Lower game (single player) \n2) War (Two player)\n3) Credits \n4) Exit");
+            WriteLine("1) PlayHigher or Lower game (single player) \n2) War (single/multiplayer)\n3) Credits \n4) Exit");
             string input = ReadLine();
             switch (input)
             { //switches are a "incase the value is"
@@ -55,6 +50,33 @@ namespace Deck_of_regular_cards
                     break;
             }
 
+        }
+        static public void Print(string _message) => WriteLine(_message);
+        static public void Pause()
+        {
+            Print("Press any key to continue...");
+            ReadKey();
+        }
+        public static string GetInput(string message)
+        {
+            Print(message);
+            return ReadLine();
+        }
+        public static ConsoleKey KeyPressed
+        {
+            get
+            {
+                ConsoleKey keyPressed = Console.ReadKey().Key;
+                return keyPressed;
+            }
+        }
+        public static bool Confirmation(string input)
+        {
+            Print($"You entered {input}.\nPress x to change what you've entered.\nPress any key besides x to continue.");
+            string answer = ReadLine();
+            if (answer.ToLower() == "x")
+            { return false; }
+            return true;
         }
     }
 }

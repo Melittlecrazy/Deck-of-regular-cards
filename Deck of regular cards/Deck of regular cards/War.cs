@@ -1,5 +1,6 @@
 ﻿using System;
 using static System.Console;
+using static Deck_of_regular_cards.Game;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Deck_of_regular_cards
 {
-    class War
+    class War : Game
     {
         int Card;
         int Second;
@@ -15,6 +16,12 @@ namespace Deck_of_regular_cards
         Deck deck = new Deck();
         public void Play()
         {
+            title = "War";
+            instructions = "";
+            Title = title;
+            AceHigh = true;
+            Deck = new Deck(52, new Suit[] { Suit.Clubs, Suit.Spades, Suit.Diamonds, Suit.Hearts });
+
             Clear();
             WriteLine("I see you want to play some War.");
             Setup();

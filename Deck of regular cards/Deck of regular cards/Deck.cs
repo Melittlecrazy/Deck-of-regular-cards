@@ -49,10 +49,34 @@ namespace Deck_of_regular_cards
         }
 
         //constructer
-        public Deck()
+        public Deck(int size, Suit[] suits)
         {
-            cards.Add(new Cards("bob",0, 1));
-            cards.Add(new Cards("bobbie", Suits.Clubs, 1));
+            int set = size / suits.Length;
+
+            for (int i = 1; i <= set; i++)
+            {
+                for (int j = 0; j < suits.Length; j++)
+                {
+                    switch (i)
+                    {
+                        case 1:
+                            cards.Add(new Cards("Ace of " + suits[j], suits[j], i));
+                            break;
+                        case 11:
+                            cards.Add(new Cards("Jack of " + suits[j], suits[j], i));
+                            break;
+                        case 12:
+                            cards.Add(new Cards("Queen of " + suits[j], suits[j], i));
+                            break;
+                        case 13:
+                            cards.Add(new Cards("King of " + suits[j], suits[j], i));
+                            break;
+                        default:
+                            cards.Add(new Cards(i + " of " + suits[j], suits[j], i));
+                            break;
+                    }
+                }
+            }
         }
 
         //show all
